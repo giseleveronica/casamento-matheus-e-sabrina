@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5, h6{
 h1{
   font-size: 3.5rem;
   line-height: 5rem;
+  display: inline;
 }
 
 h2{
@@ -56,6 +57,12 @@ p{
 }
 
 /* Title Section */
+
+.names{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
 #title .container-fluid{
   padding: 3% 15% 2%;
@@ -199,14 +206,29 @@ p{
   margin: 4% 1% 2%;
 }
 
+@media (max-width: 1300px){
+  .names{
+    flex-direction: column;
+  }
+
+  .teste{
+    background-size: 100%;
+    background-position: 40px 70px;
+  }
+}
+
 @media (max-width: 991px){
+  .names{
+    flex-direction: column;
+  }
+
   #title .container-fluid{
     text-align: center;
   }
 
   .teste{
     background-size: 100%;
-    background-position: 40px 30px;
+    background-position: 40px 70px;
   }
 
   .navbar{
@@ -215,7 +237,7 @@ p{
   }
 
   h1{
-    font-size: 2.5rem;
+    font-size: 3rem;
     line-height: 5rem;
   }
 
