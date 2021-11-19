@@ -4,6 +4,15 @@ body{
   text-align: center;
 }
 
+a{
+  font-size: 1.5rem;
+  color:#EEEBDD;
+}
+
+a:hover{
+  color: #EEEBDD;
+}
+
 h1, h2, h3, h4, h5, h6{
   font-weight: 300;
   text-align: center;
@@ -12,7 +21,7 @@ h1, h2, h3, h4, h5, h6{
 /* Headings */
 
 h1{
-  font-size: 4rem;
+  font-size: 3.5rem;
   line-height: 5rem;
 }
 
@@ -126,6 +135,37 @@ p{
   margin: 60px 0;
 }
 
+.row{
+  justify-content: center;
+}
+
+.card{
+  margin: 2rem;
+}
+
+.card-img-top{
+  margin-top: 1rem;
+}
+
+.card-text{
+  font-size: 1.5rem;
+  color:#810000;
+}
+
+.map{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mapouter{
+  width: 90%;
+}
+
+.local > p{
+  margin: 1rem 0;
+}
+
 /* Testimonials */
 
 #testimonials{
@@ -164,8 +204,18 @@ p{
     text-align: center;
   }
 
+  .teste{
+    background-size: 120%;
+    background-position: 40px 30px;
+  }
+
+  .navbar{
+    display: flex;
+    flex-direction: row;
+  }
+
   h1{
-    font-size: 5rem;
+    font-size: 2.5rem;
     line-height: 5rem;
   }
 
