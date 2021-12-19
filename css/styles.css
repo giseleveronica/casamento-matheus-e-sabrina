@@ -289,8 +289,26 @@ p{
     flex-direction: column;
   }
 
+  p{
+    font-size: 3rem;
+    margin-top: 5%; 
+  }
+
+  h4{
+    font-size: 2.5rem;
+  }
+  
+  h2{
+    font-size: 3.5rem;
+    line-height: 3rem;
+  }
+  
+  h3{
+    font-size: 3.5rem;
+  }
+
   .gift-image{
-    width: 30%;
+    width: 20%;
   }
 
   .local-image{
@@ -326,7 +344,7 @@ p{
   }
 
   h1{
-    font-size: 3rem;
+    font-size: 4rem;
     line-height: 5rem;
   }
 
