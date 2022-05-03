@@ -15,7 +15,6 @@ a:hover{
 
 h1, h2, h3, h4, h5, h6{
   font-weight: 300;
-  text-align: center;
 }
 
 /* Headings */
@@ -40,6 +39,11 @@ h4{
   margin: 0;
 }
 
+h5{
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
 p{
   margin-top: 4%;
   font-size: 2.2rem; 
@@ -47,6 +51,28 @@ p{
 
 .container-fluid{
   padding: 2% 15%;
+}
+
+/* Button */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  z-index: 99;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  background-color: rgb(207, 198, 198);
+  color: #00000080;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: rgb(183, 172, 172);
 }
 
 /* Sections */
@@ -144,6 +170,11 @@ p{
   margin: 50px 0;
 }
 
+.cardapio{
+  margin: 50px auto;
+  text-align: left;
+}
+
 .row{
   justify-content: center;
   font-size: 1.5rem;
@@ -195,6 +226,20 @@ p{
   border-radius: 1%;
 }
 
+/* Cardápio */
+
+.list-group{
+  padding: 0;
+}
+
+.list-group-item{
+  padding: 2rem;
+}
+
+.sombra{
+  box-shadow: 10px 10px 10px rgba(91, 89, 89, 0.5);
+}
+
 /* Testimonials */
 
 #testimonials{
@@ -205,7 +250,7 @@ p{
 
 .testimonial-image{
   margin: 20px;
-  width: 30%;
+  width: 20%;
   border-radius: 1%;
 }
 
@@ -254,7 +299,7 @@ p{
   width: 60px;
 }
 
-/* Confirmar Presença */
+/* Estacionamento */
 
 .btn{
   background-color: #630000;
@@ -288,6 +333,17 @@ p{
   .names{
     flex-direction: column;
   }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 1.6rem;
+  }
+
+  .navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border-color: rgba(0,0,0,.1);
+    width: 4rem;
+    height: 4rem;
+}
 
   .gift-image{
     width: 15%;
@@ -352,5 +408,11 @@ p{
 
   .row{
     font-size: 1rem;
+  }
+
+  .testimonial-image{
+    margin: 20px;
+    width: 30%;
+    border-radius: 1%;
   }
 }
