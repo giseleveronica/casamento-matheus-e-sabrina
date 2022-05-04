@@ -35,7 +35,7 @@
           <!-- Nav Bar -->
           <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <h1 class="heart">             </h1>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -56,16 +56,13 @@
                   <a class="nav-link" href="#local">Local</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#mapa">Como Chegar?</a>
+                  <a class="nav-link" href="#mapa">Mapa</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#presentes">Presentes</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#cardapio">Cardápio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#testimonials">Fotos</a>
                 </li>
             </div>
           </nav>
@@ -246,7 +243,7 @@
             </div>
             &nbsp
             <h5>• Salada Caesar;</h5>
-            <h5>• Risotode Alho Poró com Cubos de Mignon.</h5>
+            <h5>• Risoto de Alho Poró com Cubos de Mignon.</h5>
           </a>
 
           <a class="list-group-item list-group-item-action flex-column align-items-start">
@@ -345,21 +342,14 @@
       document.getElementById("seconds").innerHTML = seconds;
     }, 1000);
 
-    // Close the nav after click on item
-    const navLinks = document.querySelectorAll('.nav-link')
-    const menuToggle = document.getElementById('navbarSupportedContent')
-    const bsCollapse = new bootstrap.Collapse(menuToggle)
-    navLinks.forEach((l) => {
-      l.addEventListener('click', () => { 
-        bsCollapse.toggle() 
-      })
-    })
-
+    
     //Get the button
     var mybutton = document.getElementById("myBtn");
 
     // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
+    window.onscroll = function() {
+      scrollFunction()
+    };
 
     function scrollFunction() {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -374,6 +364,11 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
+
+    // Close the nav after click
+    $(document).click(function () {
+       $('.navbar-collapse').collapse('hide');
+    });
     </script>
 
   <!-- Collapse -->
