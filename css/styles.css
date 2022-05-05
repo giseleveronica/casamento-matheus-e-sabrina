@@ -20,13 +20,13 @@ h1, h2, h3, h4, h5, h6{
 /* Headings */
 
 h1{
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 5rem;
   display: inline;
 }
 
 h2{
-  font-size: 2.7rem;
+  font-size: 2.5rem;
   line-height: 3rem;
 }
 
@@ -204,14 +204,9 @@ p{
   margin-top: 3%;
 }
 
-.mapouter{
-  width: 90%;
-}
-
 .local > p{
   margin: 1rem 0;
 }
-
 
 /* Nav Details */
 
@@ -410,7 +405,7 @@ p{
   }
 
   h1{
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 5rem;
   }
 
