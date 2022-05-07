@@ -103,7 +103,7 @@ p{
 }
 
 .flower{
-  background-image: url(https://www.pngix.com/pngfile/big/188-1887563_fundo-arabesco-arabesco-png-arabesco-floral-fundo-transparent.png);
+  background-image: url("../images/flor.png");
   background-size: 40%;
   opacity: 0.8;
   background-position: right 80px;
@@ -405,11 +405,6 @@ p{
     color: black;
   }
 
-  h1{
-    font-size: 2rem;
-    line-height: 5rem;
-  }
-
   .container-fluid{
     padding: 2% 3%;
   }
@@ -434,5 +429,11 @@ p{
     margin: 20px;
     width: 30%;
     border-radius: 1%;
+  }
+
+  @media screen and (max-width: 574px){
+    h1{
+      font-size: 3rem;
+    }
   }
 }
